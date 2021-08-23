@@ -29,6 +29,18 @@ const DUMMY_MEALS = [
     description: "Healthy...and green...",
     price: 18.99,
   },
+  {
+    id: "m5",
+    name: "French Fries",
+    description: "Tasty and salty",
+    price: 5.99,
+  },
+  {
+    id: "m6",
+    name: "Pizza Pepperoni",
+    description: "Warm and stuffy",
+    price: 8.95,
+  },
 ];
 
 const AvailableMeals = () => {
@@ -36,6 +48,7 @@ const AvailableMeals = () => {
     return (
       <MealItem
         key={meal.id}
+        id={meal.id}
         name={meal.name}
         description={meal.description}
         price={meal.price}
